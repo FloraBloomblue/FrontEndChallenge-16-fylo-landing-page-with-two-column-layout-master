@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <script src="https://kit.fontawesome.com/e76c3defae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="first-Section">
+    <!--nav bar -->
+    <header>
+      <div class="header-logo"><img src="images/logo.svg" alt="header-logo"></div>
+      <div class="menu">
+        <div>Features</div>
+        <div>Team</div>
+        <div>Sign In</div>
+      </div>
+    </header>
+    <!-- first section contents -->
+    <div class="first-section-container">
+      <div class="first-section-image"><img src="images/illustration-1.svg" alt="first-section-image"></div>
+      <div class="first-section-contents">
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p> Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.</p>
+          <!-- text area -->
+          <div class="first-Section-email-box">
+            <div class="textBox">
+              <input type="email" id="firstTextAreaEmail" name="email" placeholder="Enter your email..." >
+              <p id="errorMessage1"></p>
+            </div>
+            <button id="first-section-button"  onclick="firstEmailCheck()">Get Started</button>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="second-Section">
+
+    <div class="second-section-container">
+
+      <div class="second-section-image"><img src="images/illustration-2.svg" alt="second-section-image"></div>
+      <!-- second section main contents -->
+      <div class="second-section-contents">
+        <h2>Stay productive, wherever you are</h2>
+        <p>Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.</p>
+        <p>Securely share files and folders with friends, family and colleagues for 
+          live collaboration. No email attachments required!</p>
+          <!-- underined area -->
+        <div class="underlined-second-section-content">
+          
+        <div class="underline-content">See how Fylo works
+          <div class="underlined-image"><img src="images/icon-arrow.svg" alt="arrow-image"></div>
+        </div>
+        <hr>
+        </div>
+        <!-- testimonial section -->
+        <article class="testimonial-second-section">
+
+          <div class="quote-icon"><img src="images/icon-quotes.svg" alt="quote-icon"></div>
+          Fylo has improved our team productivity by an order of magnitude. Since 
+          making the switch our team has become a well-oiled collaboration machine.
+          <!-- profile -->
+          <div class="profile">
+            <div class="profile-image"><img src="images/avatar-testimonial.jpg" alt="profile-image"></div>
+            <div class="profile-content">Kyle Burton <span>Founder & CEO, Huddle</span></div>
+          </div>
+          
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="third-Section">
+    <div class="third-section-container">
+      <div class="third-section-contents">
+        <h2>Get early access today</h2>
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <!-- text area -->
+      <div class="third-section-email-box">
+         <div class="textBOX">
+          <input type="email" id="secondTextAreaEmail" name="email" placeholder="email@example.com">
+          <p id="errorMessage2"></p>
+         </div>
+         <button id="third-section-button" onclick="secondEmailCheck()">Get Started For Free</button>
+      </div>
+    
+    </div>
+  </section>
+
+  <section class="fourth-Section">
+    <div class="footer-logo"><img src="images/logo1.svg" alt="footer-logo"></div>
+    <footer class="footer">
+    
+     
+        <div class="info">
+          <div class="information">
+            <div class="info-img"><img src="images/icon-phone.svg" alt=""></div>
+            Phone: +1-543-123-4567
+          </div>
+          <div class="information">
+            <div class="info-img"><img src="images/icon-email.svg" alt=""></div>
+            example@fylo.com
+          </div>
+        </div>
+        <div class="FaQs1">
+          <div>About Us</div>
+          <div>Jobs</div>
+          <div>Press</div>
+          <div>Blog</div>
+        </div>
+        <div class="FaQs2">
+          <div>Contact Us</div>
+          <div>Terms</div>
+          <div>Privacy</div>
+        </div>
+   
+          <div class="icons">
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+          </div>
+      </footer>
+  </section>
+
+  <script>
+    function firstEmailCheck() {
+      var email;
+      email=document.getElementById("firstTextAreaEmail").value;
+      var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; //pattern
+      if (reg.test(email) == false) {
+        document.getElementById("errorMessage1").innerHTML="Please Check Your Email";
+        return false;
+      }
+    }
+    function secondEmailCheck() {
+      var email;
+      email=document.getElementById("secondTextAreaEmail").value;
+      var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; //pattern
+      if (reg.test(email) == false) {
+        document.getElementById("errorMessage2").innerHTML="Please Check Your Email";
+        return false;
+      }
+    }
+    </script>
+</body>
+</html>

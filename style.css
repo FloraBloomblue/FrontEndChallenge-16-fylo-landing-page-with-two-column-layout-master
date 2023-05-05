@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.first-Section{
+    padding-bottom: 200px;
+    background-image: url(images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size: 100%;
+}
+/* nav bar */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 40px 0px 40px;
+}
+.header-logo img {
+    width: 70%;
+}
+.menu{
+    display: flex;
+    gap:25px;
+}
+.menu div{
+    color: hsl(243, 87%, 12%);
+    font-family:'Raleway', sans-serif; ;
+    font-weight: 400;
+    font-size: 1rem;
+}
+/* first section contents */
+.first-section-container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 40px 0px 40px;
+}
+.first-section-image img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.first-section-contents{
+    display: flex;
+    flex-direction: column;
+    color: hsl(243, 87%, 12%);
+    align-items: center;
+    text-align: center;
+}
+.first-section-contents h1{
+    font-family:'Raleway', sans-serif; ;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.first-section-contents p{
+    font-family:'Open Sans', sans-serif; ;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+/* text area */
+.first-Section-email-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+.textBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#firstTextAreaEmail{
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding-left: 30px;
+    opacity: 60%;
+}
+#first-section-button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    background-color:  hsl(224, 93%, 58%);
+}
+#first-section-button:hover{
+    background-color:hsl(224, 71%, 59%) ;
+}
+#errorMessage1{
+    color: red;
+    font-family:'Raleway', sans-serif; 
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+/* second section contents */
+.second-Section{
+    background-color: hsl(240, 75%, 98%); 
+    padding:50px 0 100px;
+}
+.second-section-container{
+    margin: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.second-section-image img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.second-section-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second-section-contents h2{
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.second-section-contents p{
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color:  hsl(238, 22%, 44%);
+}
+/* underined area */
+.underlined-second-section-content{
+    display: flex;
+    flex-direction: column;
+    color: hsl(170, 45%, 43%);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.underlined-second-section-content:hover{
+    opacity: 60%;
+}
+.underline-content{
+    display: flex;
+    font-size: 1.2rem;
+}
+hr{
+    width: 100%;
+    border:none;
+    border-top: 1px solid hsl(170, 45%, 43%);    
+}
+.underlined-image img{
+    width: 100%;
+    padding-left: 5px;
+}
+/*  testimonial section */
+.testimonial-second-section{
+    margin: 0 20px;
+    background-color: #fff;
+    box-shadow:5px 5px 10px  hsl(0, 1%, 81%) ;
+    border-radius: 10px;
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: hsl(243, 87%, 12%);
+}
+.quote-icon img{
+    width: 6%;
+}
+/* profile */
+.profile{
+    display: flex;
+    margin:20px 0 0 0;
+
+}
+.profile-image{
+    max-width: 40px;
+    margin-right: 20px;
+}
+.profile-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.profile-content span{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+/* third section */
+.third-Section{
+    background-color: hsl(238, 22%, 44%);
+    padding: 100px 0;
+}
+.third-section-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    align-items: center;
+}
+.third-section-contents{
+    color: #fff; 
+   display: flex;
+   flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+.third-section-contents h2{
+    font-family: 'Raleway', sans-serif;;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.third-section-contents p{
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+/* third section email */
+
+.third-section-email-box{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+}
+.textBOX{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#secondTextAreaEmail{
+    height: 50px;
+    border: none;
+    padding-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+#third-section-button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    height: 50px;
+    background-color:  hsl(224, 93%, 58%);
+    width: 100%;
+}
+#third-section-button:hover{
+    background-color:hsl(224, 100%, 70%) ;
+}
+#errorMessage2{
+    color: #fff;
+    font-family:'Raleway', sans-serif; 
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+/* fourth section */
+
+.fourth-Section{
+    background-color: hsl(243, 87%, 12%);
+    padding: 80px 0 70px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo img{
+    width: 60%;
+    margin-left:40px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left:50px;
+}
+.info div{
+    margin-bottom: 20px;
+}
+.information{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.info-img img{
+    width: 120%;
+}
+.FaQs1{
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    color: #fff; 
+    margin-left:50px;
+}
+.FaQs1 div{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.FaQs1 div:hover{
+    color: #5285fd;
+}
+.FaQs2{
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-left:50px;
+}
+.FaQs2 div{
+    margin-bottom: 20px;
+}
+.FaQs2 div:hover{
+    color: #5285fd;
+}
+
+.icons{
+    margin-top: 50px;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.icons i:hover{
+    color: #5285fd;
+}
+
+
+/* desktop version */
+@media screen and (min-width:960px){
+    .first-Section{
+        padding-bottom: 200px;
+        background-image: url(images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-position:bottom;
+        background-size: 100%;
+    }
+    /* nav bar */
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 40px 70px 0px 70px;
+    }
+    .header-logo img {
+        width: 90%;
+    }
+    .menu{
+        gap:40px;
+    }
+    /* first section contents */
+    .first-section-container{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 70px 70px 0px 70px;
+    }
+    .first-section-image img{
+        width: 100%;
+    }
+    .first-section-contents{
+        justify-content: center;
+        text-align: left;
+        padding-right: 30px;
+    }
+    .first-section-contents h1{
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        padding-right: 50px;
+    }
+    .first-section-contents p{
+        font-size: 1.2rem;
+        padding-right: 50px;
+    }
+    /* text area */
+    .first-Section-email-box{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        gap:10px;
+        margin-top: 20px;
+    }
+    .textBox{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        width: 50%;
+    }
+    #firstTextAreaEmail{
+        height: 40px;
+ 
+    }
+    #first-section-button{
+        height: 40px;
+        width:30%;
+    }
+    #errorMessage1{
+        color: red;
+        font-family:'Raleway', sans-serif; ;
+        font-size: 0.8rem;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+    /* second section contents */
+    .second-Section{
+        padding:0 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .second-section-container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap:50px;
+        padding: 10px 70px 0 70px;
+    }
+    .second-section-image{
+        max-width: 50%;
+    }
+    .second-section-image img{
+        width: 100%;
+    }
+    .second-section-contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items:start;
+    }
+    .second-section-contents h2{
+        margin-bottom: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 1.9rem;
+    }
+    .second-section-contents p{
+        margin-bottom: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color:  hsl(243, 87%, 12%);
+        padding-right: 100px;
+    }
+    /* underined area */
+    .underlined-second-section-content{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    
+    /*  testimonial section */
+    .testimonial-second-section{
+        margin: 0 0;
+        background-color: #fff;
+        box-shadow:5px 5px 10px  hsl(0, 1%, 81%) ;
+        border-radius: 10px;
+        padding: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: hsl(243, 87%, 12%);
+        width: 50%;
+    }
+    .quote-icon img{
+        width: 5%;
+    }
+    /* profile */
+    .profile{
+        display: flex;
+        margin:20px 0 0 0;
+    
+    }
+    .profile-image{
+        max-width: 40px;
+        margin-right: 5px;
+    }
+    .profile-image img{
+        width: 60%;
+        border-radius: 20px;
+    }
+    .profile-content{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;;
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: 0.6rem;
+    }
+    .profile-content span{
+        font-weight: 400;
+        font-size: 0.6rem;
+    }
+        /* third section */
+    .third-Section{
+        background-color: hsl(238, 22%, 44%);
+        padding: 60px 0;
+    }
+    .third-section-container{
+        display: flex;
+        flex-direction: row;
+        gap:50px;
+        margin: 0 100px;
+        align-items: center; 
+    }
+    .third-section-contents{
+        color: #fff; 
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 20px 50px 20px 20px;
+       
+    }
+    .third-section-contents h2{
+        font-family: 'Raleway', sans-serif;;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .third-section-contents p{
+        font-family: 'Open Sans', sans-serif;;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding-right: 50px;
+    }
+    /* third section email */
+
+    .third-section-email-box{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 30px;
+    }
+    .textBOX{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    #secondTextAreaEmail{
+        height: 50px;
+        border: none;
+        padding-left: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+    }
+    #third-section-button{
+        font-size: 0.8rem;
+        width: 50%;
+    }
+    /* fourth section */
+    .footer-logo img{
+        width: 15%;
+        margin-left:40px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left:50px;
+    }
+    .info div{
+        margin-bottom: 15px;
+    }
+    .information{
+        font-size: 1rem;
+    }
+    .FaQs1{
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+    .FaQs2{
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+    .icons{
+        margin-top: 50px;
+        display: flex;
+        gap:30px;
+        justify-content: center;
+        align-items: start;
+        color: #fff;
+    }
+    
+}
